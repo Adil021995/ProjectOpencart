@@ -1,0 +1,41 @@
+Url = https://awesomeqa.com/ui/index.php?route=common/home
+
+#---------------------- Registration ------------------------------------------
+Register1 = //span[contains(text() , 'My Account')]
+Register2 = //a[contains(text() , 'Register')]
+
+Fname = //input[@name = 'firstname']
+FnameValue = Asgar
+Lname = //input[@name = 'lastname']
+LnameValue = Ansari
+Email = //input[@name = 'email']
+EmailValue = adilsaniyaanwar@gmail.com
+Telephone = //input[@name = 'telephone']
+TelephoneValue = 8549875499
+Password = //input[@name = 'password']
+PasswordValue = Adil45782saniya
+CPassword = //input[@name = 'confirm']
+CPasswordValue = Adil45782saniya
+Subscribe = //input[@value = '1']//parent::label[@class = 'radio-inline']
+PrivacyPolicy = //input[@type = 'checkbox']
+ContinueButton = //input[@value = 'Continue']
+#------------------------------------------------------------------------------
+
+#--------------- Home Page --------------------------------
+HomePage = //div[@id = 'logo']
+AddToCardButton = //div[@class = 'product-thumb transition']//ancestor::div[@class = 'row'][2]//child::div[@class = 'row']/div[3]/div/div[3]/button[1]
+#----------------------------------------------------------
+
+#---------------- Add Product to My Cart -------------------------------------
+RadioButton = //input[@value = '6']
+Checkbox = //input[@value = '9']
+Text = //input[@value = 'test']
+Select = //option[@value = '3']
+Textarea = //div[@id = 'product']//child::div[5]/textarea
+FileUpload = //input[@id = 'input-option222']
+DataButton = //input[@id = 'input-option219']//parent::div//child::button
+MonthYear = //th[contains(text() , 'February 1995')]
+Date = //div[@class = 'datepicker-days']//child::tbody/tr[5]/td[contains(text() , '27')]
+TimeButton = //input[@id = 'input-option221']//parent::div//child::button
+AddToCartButton = //button[@id = 'button-cart']
+#-----------------------------------------------------------------------------

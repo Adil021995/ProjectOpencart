@@ -1,0 +1,90 @@
+Url = https://awesomeqa.com/ui/index.php?route=common/home
+
+#---------------------- Registration ------------------------------------------
+Register1 = //span[contains(text() , 'My Account')]
+Register2 = //a[contains(text() , 'Register')]
+
+Fname = //input[@name = 'firstname']
+FnameValue = Adil
+Lname = //input[@name = 'lastname']
+LnameValue = Anwar
+Email = //input[@name = 'email']
+EmailValue = adilnew@gmail.com
+Telephone = //input[@name = 'telephone']
+TelephoneValue = 9534109707
+Password = //input[@name = 'password']
+PasswordValue = Adil021995
+CPassword = //input[@name = 'confirm']
+CPasswordValue = Adil021995
+Subscribe = //input[@value = '1']//parent::label[@class = 'radio-inline']
+PrivacyPolicy = //input[@type = 'checkbox']
+ContinueButton = //input[@value = 'Continue']
+#------------------------------------------------------------------------------
+
+#--------------- Home Page --------------------------------
+HomePage = //div[@id = 'logo']
+AddToCardButton = //div[@class = 'product-thumb transition']//ancestor::div[@class = 'row'][2]//child::div[@class = 'row']/div[3]/div/div[3]/button[1]
+#----------------------------------------------------------
+
+#---------------- Add Product to My Cart -------------------------------------
+RadioButton = //input[@value = '6']
+Checkbox = //input[@value = '9']
+Text = //input[@value = 'test']
+Select = //option[@value = '3']
+Textarea = //div[@id = 'product']//child::div[5]/textarea
+FileUpload = //input[@id = 'input-option222']
+SelectDate = //input[@id = 'input-option219']
+SelectDateValue = 1995-02-27
+SelectTime = //input[@id = 'input-option221']
+SelectTimeValue = 09:55
+AddToCartButton = //button[@id = 'button-cart']
+#-----------------------------------------------------------------------------
+
+#----------------- Checkout --------------------------------------------------
+Checkout = //i[@class = 'fa fa-share']//parent::a//ancestor::ul/li[5]
+#-----------------------------------------------------------------------------
+
+#-----------------------Billing Details---------------------------------------
+Fname = //input[@name = 'firstname']
+FnameValue = Adil
+Lname = //input[@name = 'lastname']
+LnameValue = Anwar
+Company = //input[@name = 'company']
+CompanyValue = MNC Company
+Address1 = //input[@name = 'address_1']
+Address1Value = Telangana / Hyderabad , Ameerpet Shivbag clony
+Address2 = //input[@name = 'address_2']
+Address2Value = Jharkhand / Ranchi , Mandar Bajar Tanre
+City = //input[@name = 'city']
+CityValue = Hyderabad
+PinCode = //input[@name = 'postcode']
+PinCodeValue = 500016
+SelectCountry = //select[@id = 'input-payment-country']//option[@value = '99']
+RegionState = //select[@id = 'input-payment-zone']//option[contains(text() , 'Bihar')]
+Continue1 = //input[@id = 'button-payment-address']
+#-----------------------------------------------------------------------------
+
+#------------------ Delivery Details -----------------------------------------
+Continue2 = //input[@id = 'button-shipping-address']
+#-----------------------------------------------------------------------------
+
+#----------------- Delivery Method -------------------------------------------
+Textarea2 = //textarea[@name = 'comment']
+Textarea2Value = Please send my order fastly guys i am waiting for my order.
+Continue3 = //input[@id = 'button-shipping-method']
+#-----------------------------------------------------------------------------
+
+#---------------------- Payment Method ---------------------------------------
+Checkboxp = //input[@value = '1']
+Continue4 = //input[@id = 'button-payment-method']
+#-----------------------------------------------------------------------------
+
+#---------------------------- Confirm Order ----------------------------------
+Continue5 = //input[@id = 'button-confirm']
+Continue6 = //a[contains(text() , 'Continue')]
+#-----------------------------------------------------------------------------
+
+#--------------------- Track Order -------------------------------------------
+TrackOrderl = //ul[@class = 'dropdown-menu dropdown-menu-right']/li[2]
+Myaccount2 = //ul[@class = 'dropdown-menu dropdown-menu-right']//parent::li[@class = 'dropdown open']
+#-----------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+package opencart;
+
+public class MainClass 
+{
+    public static void main(String[] args) throws Exception
+    {
+    	OpencartURL obj1 = new OpencartURL();
+    	obj1.openUrlOfopencart();
+    	System.out.println("Opencart open successfully");
+	}
+}

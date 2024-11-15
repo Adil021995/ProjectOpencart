@@ -1,0 +1,12 @@
+package opencart;
+
+import org.openqa.selenium.By;
+
+public class BillingDetails extends OpencartURL
+{
+	public void billing_method() throws Exception
+	{
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(pro.getProperty("Checkout"))).click();
+	}
+}

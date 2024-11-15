@@ -1,0 +1,22 @@
+package opencart;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Register extends OpencartURL
+{
+   public void register() throws Exception
+   {
+	   Thread.sleep(3000);
+	   driver.findElement(By.xpath(pro.getProperty("Register1"))).click();
+	   
+	   Thread.sleep(3000);
+	   driver.findElement(By.xpath(pro.getProperty("Register2"))).click();
+	   
+	   jse = (JavascriptExecutor)driver;
+	   Thread.sleep(3000);
+	   jse.executeScript("window.scrollBy(0 , 400)");
+   }
+}

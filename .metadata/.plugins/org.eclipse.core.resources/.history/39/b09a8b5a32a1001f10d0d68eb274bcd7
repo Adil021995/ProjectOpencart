@@ -1,0 +1,12 @@
+package opencart;
+
+import org.openqa.selenium.By;
+
+public class Register extends OpencartURL
+{
+   public void register() throws Exception
+   {
+	   Thread.sleep(3000);
+	   driver.findElement(By.xpath(pro.getProperty("Register"))).click();
+   }
+}

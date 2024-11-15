@@ -1,0 +1,19 @@
+package opencart;
+
+import org.openqa.selenium.By;
+
+public class AddProductToMyCart extends OpencartURL
+{
+   public void addToCart() throws Exception
+   {
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath(pro.getProperty("HomePage"))).click();
+	   System.out.println("Back to Home page");
+	   
+	   Thread.sleep(3000);
+	   jse.executeScript("window.scrollBy(0 , 400)");
+	   
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath(pro.getProperty("AddToCardButton"))).click();
+   }
+}

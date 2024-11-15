@@ -1,0 +1,26 @@
+package opencart;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+public class OpencartURL
+{
+   public WebDriver driver;
+   public String driverPath = "F:\\ALL STUDY FILES\\Chrome-Driver\\Driver\\chromedriver-win64\\chromedriver.exe";
+   public File src;
+   public FileInputStream fis;
+   public static Properties pro;
+   public JavascriptExecutor jse;
+   
+   public void openUrlOfopencart() throws Exception
+   {
+	   src = new File("F:\\New Project(2024)opencart\\Eclipse-Workspace-Project2024\\ArtifactId\\Orepository.properties");
+	   fis = new FileInputStream(src);
+	   pro = new Properties();
+	   pro.load(fis);
+   }
+}

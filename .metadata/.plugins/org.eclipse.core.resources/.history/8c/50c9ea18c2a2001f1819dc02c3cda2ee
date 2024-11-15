@@ -1,0 +1,18 @@
+package opencart;
+
+public class MainClass 
+{
+    public static void main(String[] args) throws Exception
+    {
+    	OpencartURL obj1 = new OpencartURL();
+    	obj1.openUrlOfopencart();
+    	System.out.println("Opencart open successfully");
+    	
+    	Register obj2 = new Register();
+    	obj2.register();
+    	System.out.println("Susseccfully clicked on Register Option");
+    	
+    	AddProductToMyCart obj3 = new AddProductToMyCart();
+    	obj3.addToCart();
+	}
+}
