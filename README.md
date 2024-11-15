@@ -8,3 +8,6 @@ The automation framework follows a modular approach, with individual classes rep
 
 A main class orchestrates the workflow by handling interactions between these modular classes, ensuring seamless integration and execution of test cases. The project effectively validates key functionalities of the Opencart website, such as user registration, product addition to the cart, billing, delivery, payment, and order confirmation.
 </h4>
+<br>
+How to see the codes ?
+If you want to see the codes then click on ArtifactId
